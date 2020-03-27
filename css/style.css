@@ -14,7 +14,7 @@ body{
     position: relative;
     width:600px;
     background-color: rgb(14, 71, 145);
-    padding: 2px 0px 10px 25px;
+    padding: 2px 20px 10px 25px;
     color: rgb(192, 192, 192); 
 }
 
@@ -31,6 +31,24 @@ form label{
     display: block;    
 }
 
+.main .container form label[for="agreement"]{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.main .container form label a{
+    color: rgb(255, 7, 67);
+}
+
+span:nth-child(4){
+    display: block;
+}
+
+/* class for showing and hiding the long text of consent */
+.main .container .agreementShort{
+    visibility: hidden;
+}
+
 form input, form select, form textarea{
     background-color: rgb(11, 100, 112);
 }
@@ -43,7 +61,7 @@ form input, form select, form textarea{
     border-color: rgb(154, 205, 50);
 }
 
-form input:focus, form input:focus, form select:focus, form textarea:focus{
+form input:focus, form select:focus, form textarea:focus{
     background-color: rgb(250, 128, 114);
     border: 3px solid rgb(139, 0, 139);
 }
@@ -57,8 +75,10 @@ form input:focus, form input:focus, form select:focus, form textarea:focus{
 .containerUnfilled{
     position: absolute;
     height: 50vh;
-    width: 200px;
-    right: 0;
-    top: 50px;
+    width: 250px;
+    right: 10px;
+    top: 60px;
+    color: rgb(255, 7, 67);
+    line-height: 1.5;
 }
 
