@@ -69,11 +69,12 @@ showMore.addEventListener('click', function(event){
     event.preventDefault();
 
     const spanAgreement=event.target.nextElementSibling;
-    console.log(spanAgreement);
     
-    if(spanAgreement.classList=='agreementShort'){
-        spanAgreement.classList.remove('agreementShort');
+    if(spanAgreement.classList=='agreementLong'){
+        spanAgreement.classList.remove('agreementLong');
+        event.target.innerHTML='Zobacz więcej';
     }else if(spanAgreement.classList==''){
-        spanAgreement.classList.add('agreementShort');
+        spanAgreement.classList.add('agreementLong');
+        event.target.innerHTML='Zobacz mniej';
     }
 })
