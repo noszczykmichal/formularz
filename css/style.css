@@ -49,6 +49,13 @@ span:nth-child(4){
     display: block;
 }
 
+.constentLong{
+    height:100%;
+}
+.formConstentL{
+    height: 100%;
+}
+
 form input, form select, form textarea{
     background-color: rgb(11, 100, 112);
 }
@@ -95,5 +102,9 @@ form input:focus, form select:focus, form textarea:focus{
     .containerUnfilled{
         position: static;
         margin-bottom: 20px;
+    }
+
+    body, .container{
+        height: 100%;
     }
 }
